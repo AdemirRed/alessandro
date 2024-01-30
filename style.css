@@ -9,9 +9,8 @@
     background: #182037;
 }
 
-.div-filho {
-    display: block;
-    height: 150px;
+.div-pai {
+    position: relative;
 }
 
 .baner {
@@ -20,14 +19,9 @@
     height: auto;
 }
 
-.div-pai {
-
-
-    position: relative;
-
-}
-
 .div-filho {
+    display: block;
+    height: 150px;
     position: absolute;
     top: 35%;
     left: 68%;
@@ -36,20 +30,20 @@
 
 .social img {
 
-    margin-right: 23.5px;
+    margin-right: 8%;
     display: inline-block;
-    width: 100px;
+    width: 12%;
     margin-bottom: 5%;
 }
 
 .p {
-    right: 50px;
+    right: 5%;
     position: relative;
-    width: 600px;
+    width: 80%;
     color: #FFF;
     font-family: 'Lexend Giga', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -59,26 +53,70 @@
     position: relative;
     display: block;
     text-align: center;
-    line-height: 120px;
-    left: -90px;
-    bottom: 15px;
+    line-height: 5.5vw;
+    left: -15%;
+    bottom: 5%;
 
 }
 
 .titulo h1 {
     color: #FFF;
     font-family: Lalezar;
-    font-size: 84px;
+    font-size: 5.5vw;
     font-weight: 400;
-    font-size: 128px;
 
 
 }
 
-
-
 .titulo h1:last-of-type {
     font-weight: 400;
-
     color: #20ABF0;
+}
+
+.Pc {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .baner {
+        display: none;
+    }
+
+    .div-filho {
+        margin-left: -10vw;
+        position: relative;
+        width: 100vw;
+        top: 70vw;
+        left: 50%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titulo h1 {
+
+        margin-left: 6vw;
+        position: relative;
+        font-size: 15vw;
+        line-height: 15vw;
+
+
+    }
+
+    p {
+        margin-left: 5vw;
+        right: 12vw;
+        position: relative;
+        font-size: 5vw;
+        width: 100vw;
+    }
+
+    .Pc {
+        top: 1vh;
+        z-index: 1;
+        position: absolute;
+        margin-left: 20vw;
+        display: block;
+        width: 60vw;
+    }
 }
