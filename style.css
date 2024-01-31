@@ -6,17 +6,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #182037;
 }
+
+.video {
+    z-index: -1;
+    position: fixed;
+
+}
+
 
 .div-pai {
     position: relative;
 }
 
 .baner {
+
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
+    opacity: .8;
+
 }
 
 .div-filho {
@@ -37,9 +46,9 @@
 }
 
 .p {
-    right: 5%;
+    right: 11%;
     position: relative;
-    width: 80%;
+    width: 90%;
     color: #FFF;
     font-family: 'Lexend Giga', sans-serif;
     text-align: center;
@@ -105,7 +114,7 @@
 
     p {
         margin-left: 5vw;
-        right: 12vw;
+        right: 4vw;
         position: relative;
         font-size: 5vw;
         width: 100vw;
@@ -119,4 +128,14 @@
         display: block;
         width: 60vw;
     }
+}
+
+.teste {
+    background: rgba(19, 129, 5, 0.223);
+    width: 150px;
+    height: 1500px;
+}
+
+.h1 {
+    width: 5px;
 }
